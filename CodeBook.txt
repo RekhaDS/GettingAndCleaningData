@@ -1,0 +1,282 @@
+			Data Dictionary –  Data collected from the Samsung Galaxy S accelorometer collected from a group of 30 people.
+
+
+subject 	1
+		1 to 30 subjects either in the training data set or the test data set. 
+	 	
+
+
+activity       1 - 6
+		      1.WALKING, 
+		   2.WALKING_UPSTAIRS, 
+ 3.	WALKING_DOWNSTAIRS,
+ 4.	SITTING, 
+ 5.	STANDING, 
+ 6.	LAYING
+
+
+tBodyAcc-mean()-X     1 
+		
+
+	Mean of the body linear acceleration in the X direction for each of the subject and for each of their activity  
+
+
+tBodyAcc-mean()-Y        
+	 
+	 Mean of the body linear acceleration in the Y direction for each of the subject and for each of their activity  
+
+tBodyAcc-mean()-Z           
+
+	Mean of the body linear acceleration in the Z direction for each of the subject and for each of their activity  
+
+"tGravityAcc-mean()-X"        
+
+	Mean of the gravity acceleration signals in the X  direction for each of the subject and for each of their activity
+
+"tGravityAcc-mean()-Y"       
+	Mean of the gravity acceleration signals in the Y  direction for each of the subject and for each of their activity
+
+
+"tGravityAcc-mean()-Z"        
+	Mean of the gravity acceleration signals in the Z  direction for each of the subject and for each of their activity
+
+
+
+
+
+
+
+
+"tBodyAccJerk-mean()-X"       
+	Mean of the Jerk signals (body acceleration in time) in the X direction for each of the subjects and each of their activity. 
+
+
+
+"tBodyAccJerk-mean()-Y"       
+Mean of the Jerk signals (body acceleration in time) in the Y direction for each of the subjects and each of their activity.
+
+
+
+"tBodyAccJerk-mean()-Z"       
+Mean of the Jerk signals (body acceleration in time) in the Z direction for each of the subjects and each of their activity.
+
+
+
+"tBodyGyro-mean()-X"         
+
+	Mean for body gyro acceleration in the X direction for each of the subjects and each of their activity
+
+"tBodyGyro-mean()-Y"          
+	Mean for body gyro acceleration in the Y direction for each of the subjects and each of their activity
+
+
+"tBodyGyro-mean()-Z"          
+	Mean for body gyro acceleration in the Z direction for each of the subjects and each of their activity
+
+"tBodyGyroJerk-mean()-X"      
+	Mean for the Jerk signals body gyro acceleration in the X direction for each of the subjects and each of their activity
+
+
+"tBodyGyroJerk-mean()-Y"      
+	Mean for the Jerk signals body gyro acceleration in the Y direction for each of the subjects and each of their activity
+
+
+"tBodyGyroJerk-mean()-Z"     
+	Mean for the Jerk signals body gyro acceleration in the Z direction for each of the subjects and each of their activity
+
+
+
+The remaining columns in the list are all mean or standard deviation measurements for body acceleration and gravity acceleration and the Jerk signals measures with respect to time for both body  and gravity acceleration for each of the subject doing their respective activity
+
+"tBodyAccMag-mean()"          
+
+
+"tGravityAccMag-mean()"       
+
+
+"tBodyAccJerkMag-mean()"      
+
+
+"tBodyGyroMag-mean()"         
+
+
+"tBodyGyroJerkMag-mean()"    
+
+
+
+"fBodyAcc-mean()-X"           
+
+
+"fBodyAcc-mean()-Y"           
+
+
+"fBodyAcc-mean()-Z"           
+
+
+"fBodyAccJerk-mean()-X"       
+
+
+"fBodyAccJerk-mean()-Y"      
+
+
+"fBodyAccJerk-mean()-Z"       
+
+
+"fBodyGyro-mean()-X"          
+
+
+"fBodyGyro-mean()-Y"          
+
+
+"fBodyGyro-mean()-Z"          
+
+
+"fBodyAccMag-mean()"         
+
+
+"fBodyBodyAccJerkMag-mean()"  
+
+
+"fBodyBodyGyroMag-mean()"     
+
+
+"fBodyBodyGyroJerkMag-mean()" 
+
+
+"tBodyAcc-std()-X"            
+
+
+"tBodyAcc-std()-Y"           
+
+
+"tBodyAcc-std()-Z"            
+
+
+"tGravityAcc-std()-X"         
+
+
+"tGravityAcc-std()-Y"         
+
+
+"tGravityAcc-std()-Z"         
+
+
+"tBodyAccJerk-std()-X"       
+
+
+"tBodyAccJerk-std()-Y"        
+
+
+"tBodyAccJerk-std()-Z"        
+
+
+"tBodyGyro-std()-X"           
+
+
+"tBodyGyro-std()-Y"           
+
+
+
+"tBodyGyro-std()-Z"          
+
+
+
+"tBodyGyroJerk-std()-X"       
+
+
+
+"tBodyGyroJerk-std()-Y"       
+
+
+
+"tBodyGyroJerk-std()-Z"       
+
+
+
+"tBodyAccMag-std()"           
+
+
+
+"tGravityAccMag-std()"       
+
+
+
+"tBodyAccJerkMag-std()"       
+
+
+"tBodyGyroMag-std()"          
+
+
+"tBodyGyroJerkMag-std()"      
+
+
+"fBodyAcc-std()-X"            
+
+
+"fBodyAcc-std()-Y"           
+
+
+"fBodyAcc-std()-Z"            
+
+
+"fBodyAccJerk-std()-X"   
+
+     
+
+"fBodyAccJerk-std()-Y"        
+
+
+
+"fBodyAccJerk-std()-Z"        
+
+
+
+"fBodyGyro-std()-X"          
+
+
+"fBodyGyro-std()-Y"           
+
+
+“fBodyGyro-std()-Z"           
+
+
+
+"fBodyAccMag-std()"           
+
+
+
+"fBodyBodyAccJerkMag-std()"   
+
+
+
+"fBodyBodyGyroMag-std()"     
+
+
+
+
+"fBodyBodyGyroJerkMag-std()" 
+
+
+
+Note:- 
+The data was collected from the accelerometers from the Samsung Galaxy S smartphone. And the data for the project was obtained by downloading the following zip file. 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+
+The zip file contains data for each of the subjects. The subjects were divided in to two groups test and train.  Measurements were taken for 6 different activities that the subjects performed using the accelerometer and the gyroscope. 
+
+
+To make the final tidy data set, the steps I followed:-
+    Downloaded the file https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and extracted the contents with in the zip file. 
+
+The zip file contains, train and test data sets for each of the subjects. Also, contains feature.txt, describing the columns and the activity.txt describing the activities that the subjects performed for the various measurement.
+
+I have taken only the 66 mean and std. deviation columns in my analysis to reach the tidy data set. I have ignored those columns that do not have an exact match for mean and std deviation. This means I have ignored around 20 columns in my calculations/analysis. The reason being that each of the  features are the members of a set of measurements variables and are not independent measurements.
+
+
+The final outcome is a tidy data set of 180*68 dimension. The data is tidy because it follows the tidy data principle of :- 
+ 1)	Each variable measured is in one column
+ 2)	Each different observation of the variables are in a different row
+
+
